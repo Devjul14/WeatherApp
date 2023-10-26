@@ -4,7 +4,7 @@
 
 <div class="container mt-5">
     <h2 class="my-text2">Weather Data</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
     @if(isset($data))
     <div class="card mt-3 grad">
         <div class="row">
