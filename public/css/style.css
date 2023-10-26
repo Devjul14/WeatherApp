@@ -19,8 +19,9 @@ body {
   }
 
   .card {
-    width: auto;
-    height: auto;
+    width: 100%; /* Kartu mengisi lebar maksimal */
+    max-width: 400px; /* Tetapkan lebar maksimum kartu */
+    height: auto; /* Kartu akan menyesuaikan tinggi berdasarkan kontennya */
     background: linear-gradient(to bottom right, #aaf5f0, #98cee0);
     border-radius: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
@@ -29,6 +30,14 @@ body {
     text-align: left;
     font-size: 18px;
   }
+  
+  /* Konten kartu menjadi responsif */
+  .card h5,
+  .card p {
+    max-width: 100%; /* Konten akan menyesuaikan lebar kartu */
+    word-break: break-word; /* Kata akan dibungkus saat mencapai batas lebar */
+  }
+  
 
   input:hover {
     border: 2px solid #176B87; /* Contoh: mengubah border menjadi merah saat dihover */
