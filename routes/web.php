@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WeatherController;
+use App\Http\Controllers\TestEloquentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,5 @@ Route::get('/', function () {
 
 Route::get('/weather', [WeatherController::class,'index']);
 Route::post('/get-weather', [WeatherController::class,'getWeather']);
+
+Route::get('/eloquent', [TestEloquentController::class,'index']);
