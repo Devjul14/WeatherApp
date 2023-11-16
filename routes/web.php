@@ -22,4 +22,5 @@ Route::get('/', function () {
 Route::get('/weather', [WeatherController::class,'index']);
 Route::post('/get-weather', [WeatherController::class,'getWeather']);
 
-Route::get('/eloquent', [TestEloquentController::class,'index']);
+Route::get('/onetoone', [TestEloquentController::class,'onetoone']);
+Route::get('/onetomany', [TestEloquentController::class,'onetomany']);
