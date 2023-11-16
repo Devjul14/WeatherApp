@@ -23,7 +23,10 @@ class TestEloquentController extends Controller
     }
 
     public function onetomany(){
-        $post = Post::find(1);
-        dd($post->comments[0]);
+        $posts = Post::get();
+        // dd($post->comments[0]);
+        foreach ($posts as $post ) {
+            dd($post->comments[1]->comment);
+        }
     }
 }
