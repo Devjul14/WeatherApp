@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Role;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -27,6 +28,20 @@ class TestEloquentController extends Controller
         // dd($post->comments[0]);
         foreach ($posts as $post ) {
             dd($post->comments[1]->comment);
+        }
+    }
+
+    public function manytomany(){
+        $roles = Role::get();
+// dd($roles);
+        foreach ($roles as $role) {
+            // dd($role->users[0]->name);
+        }
+
+        $users = User::get();
+// dd($users);
+        foreach ($users as $user) {
+            dd($user->roles);
         }
     }
 }
